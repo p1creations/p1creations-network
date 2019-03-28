@@ -371,9 +371,9 @@ std::tuple<uint64_t, std::string> Nigel::nodeFee() const
     return {m_nodeFeeAmount, m_nodeFeeAddress};
 }
 
-std::tuple<std::string, uint16_t> Nigel::nodeAddress() const
+std::tuple<std::string, uint16_t, bool> Nigel::nodeAddress() const
 {
-    return {m_daemonHost, m_daemonPort};
+    return {m_daemonHost, m_daemonPort, m_daemonSSL};
 }
 
 bool Nigel::getTransactionsStatus(
