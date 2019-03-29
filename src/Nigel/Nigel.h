@@ -160,5 +160,5 @@ class Nigel
         uint16_t m_daemonPort;
 
         /* If the daemon is SSL */
-        bool m_daemonSSL = 0;
+        bool m_daemonSSL = false;
 };
