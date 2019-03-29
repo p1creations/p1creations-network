@@ -32,7 +32,7 @@ struct Config
     Logger::LogLevel logLevel = Logger::DISABLED;
     
     /* Use SSL with daemon */
-    bool ssl;
+    bool ssl = false;
 };
 
 Config parseArguments(int argc, char **argv);
